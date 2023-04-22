@@ -9,6 +9,10 @@ import { MaterialModule } from 'src/material';
 import { BarComponent } from './_components/_partials/d3/bar/bar.component';
 import { SideNavComponent } from './_components/_shared/side-nav/side-nav.component';
 import { D3Component } from './_components/d3/d3.component';
+import { ProfileCardComponent } from './_components/_partials/profile-card/profile-card.component';
+import { UsersComponent } from './_components/users/users.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,19 @@ import { D3Component } from './_components/d3/d3.component';
     TopNavComponent,
     BarComponent,
     SideNavComponent,
-    D3Component
+    D3Component,
+    ProfileCardComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
