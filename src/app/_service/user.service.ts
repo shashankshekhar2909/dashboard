@@ -49,7 +49,7 @@ export class UserService {
       })
       .pipe(
         map((response: any) => {
-          // console.log(response);
+          console.log(response);
           return response;
         }),
         catchError((error) => throwError(error))
