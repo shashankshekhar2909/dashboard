@@ -9,7 +9,7 @@ import { map, catchError, throwError } from 'rxjs';
 })
 export class UserService {
 
-  url:string = 'https://jsonplaceholder.typicode.com/'
+  url:string = 'http://localhost:8000/'
   private httpOptions: HttpHeaders;
   constructor(
     private http: HttpClient,

@@ -1,0 +1,14 @@
+
+.profileCardOuter {
+  padding: 5px;
+  .profileCard{
+    padding: 10px 5px;
+    border: 1px solid lightgray;
+    background-color: azure;
+    min-height: 20vh;
+    .name{
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  }
+}
